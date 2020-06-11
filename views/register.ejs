@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  ​
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Michele Bitetto @mic_codes" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    ​
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+    ​
+    <title>Registration Page</title>
+  </head>
+  ​
+  <body>
+    <div>
+      <div class="loginForm">
+        <div style="padding: 10px;">
+          <h3>Hi, Please Schedule a Meeting with <%=host_name%></h3>
+        </div>
+        <form method="POST" action="/register/success">
+          <div class="formBody">
+            <div>
+              <div class="formInput">
+                <div>Please enter your name</div>
+                <input type="text" maxlength="30" name="visitor_name" />
+              </div>
+              <div hidden>
+                <div>Host name</div>
+                <input
+                  type="text"
+                  maxlength="30"
+                  name="host_name"
+                  value="<%=host_name%>"
+                />
+              </div>
+              <div class="formInput">
+                <div>Where are coming you from</div>
+                <input type="text" maxlength="30" name="from" />
+              </div>
+              <div class="formInput">
+                <div>Date</div>
+                <input type="date" maxlength="30" name="date" />
+              </div>
+              <div class="formInput">
+                <div>Time</div>
+                <input type="time" maxlength="30" name="Meeting_time" />
+              </div>
+              <div class="formInput">
+                <div>Purpose of meeting</div>
+                <select name="POM">
+                  <option value="personal">Personal</option>
+                  <option value="official">Official</option>
+                  <option value="marketing">Marketing</option>
+                  <option value="interview">Interview</option>
+                </select>
+              </div>
+              <div class="rememberMe">
+                <input id="remember" type="checkbox" class="checkRemember" />
+                <label for="remember">Remember me</label>
+              </div>
+            </div>
+            <div class="loginButton">
+              <a href="https://instagram.com/mic_codes" target="_blank">
+                <button>Submit</button>
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  ​
+</html>

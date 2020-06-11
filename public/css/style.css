@@ -1,0 +1,162 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: #f2306a;
+  background: -moz-linear-gradient(left, #f2306a 0%, #6d00a0 100%);
+  background: -webkit-linear-gradient(left, #f2306a 0%, #6d00a0 100%);
+  background: linear-gradient(to right, #f2306a 0%, #6d00a0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2306a', endColorstr='#6d00a0', GradientType=1);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  outline: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.loginForm {
+  position: absolute;
+  height: 650px;
+  width: 350px;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background-color: #050023;
+  color: white;
+  border-radius: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  box-shadow: 0px 7px 23px #ffffff7a;
+}
+
+.formHead {
+  height: 30%;
+  width: 40%;
+  text-align: center;
+  background: #ff0067;
+  margin: -58px 0 14% 30%;
+  border-radius: 100%;
+}
+
+.logo {
+  padding-top: 34%;
+  font-size: 30px;
+}
+
+.logo span {
+  color: #050023;
+  font-size: 32px;
+}
+
+.formInput {
+  margin: 5%;
+}
+
+.formInput div {
+  margin-bottom: 8px;
+  text-align: center;
+  color: white;
+}
+
+.formInput input {
+  position: relative;
+  height: 35px;
+  width: 90%;
+  padding: 0 5%;
+  background: #050023;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 2px solid #ff0067;
+}
+
+.formInput input:focus {
+  border: 2px solid #007acc;
+}
+
+.rememberMe {
+  margin: 8% 5%;
+}
+
+.loginButton {
+  margin-top: 12%;
+  text-align: center;
+}
+
+.loginButton button {
+  padding: 12px 70px;
+  background-color: #ff0067;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.forgotPass {
+  margin-top: 4%;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label:before {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 0 2% 0 0;
+  border: 2px solid #ff0067;
+  border-radius: 4px;
+  cursor: pointer;
+  vertical-align: middle;
+  content: "\00a0";
+}
+
+input[type="checkbox"]:checked + label:before {
+  background: #ff0067;
+  color: #050023;
+  font-size: 12px;
+  text-align: center;
+  content: "\2713";
+}
+
+input[type="checkbox"]:checked + label:after {
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .loginForm {
+    height: 400px;
+    width: 300px;
+    top: 54%;
+  }
+  .formHead {
+    height: 28%;
+  }
+  .logo {
+    padding-top: 30%;
+  }
+  .loginButton {
+    margin-top: 0%;
+  }
+}
