@@ -8,14 +8,15 @@ const app = express();
 const cors = require("cors");
 const ejs = require("ejs");
 const { App } = require("@slack/bolt");
+const config = require("./config/config.js")
 
 const urlencodedParser = bodyParser.urlencoded({ extended: true });
 
-const token = "";
+const token = config.token
 
 const botkeys = new App({
   token: token,
-  signingSecret: "",
+  signingSecret: config.signingSecret,
 });
 
 app.set("view engine", "ejs");
